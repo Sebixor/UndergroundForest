@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bwgwqmjpfkbtd"]
+
+[ext_resource type="PackedScene" uid="uid://d2fq73ilx14tc" path="res://assets/objects/calavera.glb" id="1_hkf3q"]
+[ext_resource type="Script" uid="uid://c4iurtcywvn2g" path="res://calavera.gd" id="2_up540"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_up540"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wp1py"]
+
+[node name="calavera" unique_id=1317681293 instance=ExtResource("1_hkf3q")]
+script = ExtResource("2_up540")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1773108175]
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D" index="0" unique_id=1792038042]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D" index="0" unique_id=240134623]
+transform = Transform3D(102, 0, 0, 0, 73, 0, 0, 0, 111, 0, 12.444368, 0)
+shape = SubResource("BoxShape3D_up540")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=1137582969]
+transform = Transform3D(25, 0, 0, 0, 23, 0, 0, 0, 25, 0, 14.152414, 0)
+shape = SubResource("BoxShape3D_wp1py")

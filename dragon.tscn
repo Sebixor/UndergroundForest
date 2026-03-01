@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://2fg88vemwaxy"]
+
+[ext_resource type="PackedScene" uid="uid://dx14ptkl0eq2j" path="res://assets/objects/DRAGOOOPOON.glb" id="1_ixu8j"]
+[ext_resource type="Script" uid="uid://qve3jhtb1v71" path="res://dragon.gd" id="2_n6spy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n6spy"]
+size = Vector3(293, 287, 339)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qxdfn"]
+
+[node name="DRAGOOOPOON" unique_id=1966706803 instance=ExtResource("1_ixu8j")]
+script = ExtResource("2_n6spy")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=875929649]
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D" index="0" unique_id=620201568]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D" index="0" unique_id=1550364311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.28143, 119.43683, 121.49608)
+shape = SubResource("BoxShape3D_n6spy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=1417978097]
+transform = Transform3D(91, 0, 0, 0, 92, 0, 0, 0, 182, 81.3407, 105.02203, 118.40721)
+shape = SubResource("BoxShape3D_qxdfn")
