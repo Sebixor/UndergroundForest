@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dk2og3qfj8a4r"]
+
+[ext_resource type="Script" uid="uid://ck76b8sejph1l" path="res://start/start_screen.gd" id="1_lpg12"]
+[ext_resource type="VideoStream" uid="uid://cagn6hp0alma3" path="res://start/start.ogv" id="2_knx1u"]
+
+[node name="StartScreen" type="CanvasLayer" unique_id=1203232326]
+script = ExtResource("1_lpg12")
+
+[node name="Control" type="Control" parent="." unique_id=380613063]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Control" unique_id=1769205581]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("2_knx1u")
+
+[node name="PlayButton" type="Button" parent="Control" unique_id=2111124466]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Play"
+
+[node name="QuitButton" type="Button" parent="Control" unique_id=1271624511]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Quit"
